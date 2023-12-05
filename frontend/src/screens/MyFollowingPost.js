@@ -28,7 +28,7 @@ export default function MyFollowingPost() {
       .then((res) => res.json())
       .then((result) => setData(result))
       .catch((error) => console.log(error));
-  }, []);
+  }, [navigate]);
   //function to like a post
   const likePost = (id) => {
     fetch("/like", {

@@ -43,7 +43,7 @@ export default function Createpost() {
         })
         .catch((err) => console.log(err));
     }
-  }, [url]);
+  }, [url, body, navigate]);
 
   const postDetails = () => {
     const data = new FormData();
@@ -98,7 +98,7 @@ export default function Createpost() {
             }
           />
         </div>
-        <img src={url} id="uploadPhoto" alt="image-demo" />
+        <img src={url} id="uploadPhoto" alt="update-demo" />
         <div>
           <span
             onClick={() => handleIconClick()}

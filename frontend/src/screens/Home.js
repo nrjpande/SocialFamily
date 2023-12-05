@@ -70,7 +70,7 @@ export default function Home() {
         setRecommendations(result);
       })
       .catch((err) => console.log(err));
-  }, [data]);
+  }, [data, navigate]);
   //Create new post
 
   //we can create a post here
@@ -98,7 +98,7 @@ export default function Home() {
         })
         .catch((err) => console.log(err));
     }
-  }, [url]);
+  }, [url, body, navigate]);
 
   //like a post
   const likePost = (id) => {
@@ -796,7 +796,7 @@ export default function Home() {
                                   )}
                                 </div>
                               </div>
-                              {/*comments display for likes count and reply option*/} 
+                              {/*comments display for likes count and reply option*/}
                               <div style={{ display: "flex" }}>
                                 <p
                                   className="commentTime"

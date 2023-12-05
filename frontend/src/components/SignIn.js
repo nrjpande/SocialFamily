@@ -15,7 +15,7 @@ export default function Signin() {
   const notify = (msg) => toast.error(msg);
   const notifyB = (msg) => toast.success(msg);
 
-  const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  const emailRegex = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/;
 
   //sign in function if no login tokens are saved
   const postData = () => {

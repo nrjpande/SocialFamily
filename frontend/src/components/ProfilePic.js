@@ -57,7 +57,7 @@ export default function ProfilePic({ changeProfile }) {
 
   useEffect(() => {
     if (image) postDetails();
-  }, [image]);
+  }, [image, postDetails]);
 
   // cloudianry url is generated we will upload it to database as photo of the user
   useEffect(() => {
@@ -73,7 +73,7 @@ export default function ProfilePic({ changeProfile }) {
         "https://upload.wikimedia.org/wikipedia/commons/5/50/User_icon-cp.svg";
       localStorage.setItem("user", JSON.stringify(storedData));
     }
-  }, [url]);
+  }, [url, postPic]);
 
   return (
     <div className="profilePic darkBg">
