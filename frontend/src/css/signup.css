@@ -1,0 +1,91 @@
+.signUp{
+flex:1;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.form-container{
+    width: 35%;
+}
+
+.SignUpTitle{
+    color: black;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.form-container input{
+    height: 25px;
+}
+
+.form-container #submit-btn{
+    height: 30px;
+    background-color: rgb(37, 36, 36);
+}
+
+.form{
+    background-color:white;
+    padding: 5px;
+    border: .1px solid black;
+    border-radius: 1px;
+    line-height: 30px;
+}
+
+.loginPara{
+    color: rgba(var(--f52,142,142,142),1);
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0px 40px 20px 40px;
+}
+
+.input{
+    padding: 5px;
+    margin: 3px 0px;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form > div{
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+}
+.radio-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+.radio-container input{
+    margin-right: 30px;
+}
+  
+  label {
+    margin-right: px; 
+  }
+
+#submit-btn{
+    background-color: #1773EA;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    width: 90%;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+@media screen and (max-width : 760px) {
+    .form-container{
+        width: 80%;
+        height: 40%;
+    }
+
+    .radio-container input{
+        margin:auto;
+    }
+}

@@ -1,0 +1,237 @@
+#Social-family-logo{
+    margin:auto;
+    color: whitesmoke;
+    width: 135px;
+    height: 85px;
+}
+
+.search-bar{
+  width:30%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.search-bar input{
+    width:100%;
+    padding: 5px 30px 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+
+.search-bar input::placeholder{
+    text-align: center;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    box-shadow: 1px 5px 5px #e0dcdc;
+    background-color: rgb(34, 172, 68);
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:  80px;
+    
+}
+
+ul{
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+li{
+    list-style: none;
+    padding: 10px 10px;
+    color: white;
+}
+
+#profileImage{
+    width: 50px;
+    border-radius: 30px;
+    height: auto;
+    object-fit: contain;
+}
+
+#profileImageNotification{
+    width: 50px;
+    border-radius: 30px;
+    height: auto;
+    object-fit: contain;
+}
+
+.material-symbols-outlined-time {
+    color: rgb(28, 87, 154);
+  font-variation-settings:
+  'FILL' 100,
+  'wght' 50,
+  'GRAD' 100,
+  'opsz' 0
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.primaryBtn{
+    cursor: pointer;
+    font-weight: bolder;
+    padding: 13px 25px;
+    font-size: 0.8rem;
+    border:none;
+    color: white;
+    background: #db183c;
+    border-radius: 15px;
+    margin-left: 15px;
+    transition: all 0.25s ease;
+}
+
+.primaryBtn:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px -10px rgba(219,24, 44,0.6);
+}
+
+.nav-mobile{
+    display: none;
+}
+
+/* Style for the dropdown container */
+.dropdown-btn {
+    margin-left: -15px;
+}
+  /* Style for the dropdown content (initially hidden) */
+.dropdown-content {
+    margin-top: 30px;
+    right: 30px;
+    display: block;
+    position: absolute;
+    background-color: white;
+    min-width: 120px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 8px 16px 0px rgba(202, 18, 18, 0.2);
+    border: .1px solid black;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.notification-dropdown-content {
+    margin-top: 65px;
+    right: 0;
+    display: block;
+    position: absolute;
+    background-color: white;
+    min-width: 300px;
+    max-height: 700px;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 8px 16px 0px rgba(202, 18, 18, 0.2);
+    border: .1px solid black;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.delete-notifications{
+    padding: 10px;
+    justify-content: right;
+    margin-left: 65%;
+    background-color: white;
+}
+
+.delete-notifications button{
+    
+    background-color: white;
+    border: none;
+    color: red;
+    font-weight: bolder;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.notification-icon{
+    /* margin-left: 10%; */
+    border-bottom: .1px solid black;    
+}
+
+ .notificationCount{
+    position: relative;    
+    color: white;
+    font-weight: bolder;
+    background-color: red;
+    width: 25px;
+    height: 25px;
+    left: -20px;
+    box-shadow: 0px 8px 16px 0px rgba(202, 18, 18, 0.2);
+    border: .1px solid black;
+    border-radius: 30px;
+}
+
+/* Style for dropdown menu items */
+.dropdownLinks{
+    width: inherit;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+/* Style for dropdown menu items on hover */
+.dropdownLinks:hover {
+    background-color: #ddd;
+}
+
+@media screen and (max-width:760px){
+    #merny-logo{
+        display: none;
+    }
+
+    .search-bar{
+        margin-right: 0;
+    }
+    
+    .nav-menu{
+        display: none;
+    }
+
+    .nav-mobile{
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+    }
+    .navbar{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        box-shadow:0px -2px 5px #fff ;
+    }
+
+    .navbar ul{
+        margin: 0;
+        padding: 10px 0px;
+    }
+
+    .notification-dropdown-content {
+        width: 99%;
+        max-height: 80%;
+        justify-content: center;
+        align-items: center;
+        box-shadow: none;
+        margin-right: 2px;
+        margin-bottom: 30px;
+        border: none;
+        font-size: larger;
+    }
+}
