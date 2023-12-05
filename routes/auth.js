@@ -6,9 +6,8 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const { Jwt_secret } = require("../keys");
 
-
 //If a new user signup
-router.post("/signup", (req, res) => {
+router.post("/https://socialfamilynew.netlify.app/SignUp", (req, res) => {
   const { name, userName, email, password, gender } = req.body;
 
   if (!name || !userName || !email || !password || !gender) {
@@ -44,7 +43,7 @@ router.post("/signup", (req, res) => {
   );
 });
 //existing user signIn
-router.post("/SignIn", (req, res) => {
+router.post("/https://socialfamilynew.netlify.app/SignIn", (req, res) => {
   const { email, password } = req.body;
 
   if (!email || !password) {

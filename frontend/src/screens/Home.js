@@ -495,7 +495,7 @@ export default function Home() {
                 }
               />
             </div>
-            <img src={editImage} id="uploadPhoto" alt="demo" />
+            <img src={editImage} id="uploadPhoto" alt="update-demo" />
             <div>
               <span
                 onClick={() => handleIconClick()}
