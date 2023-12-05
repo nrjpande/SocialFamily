@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import { toast } from "react-toastify";
 
 export default function ProfilePic({ changeProfile }) {
@@ -14,7 +14,7 @@ export default function ProfilePic({ changeProfile }) {
   };
 
   // posting image to cloudinary
-  const postDetails = () => {
+  const postDetails = useCallback(() => {
     const data = new FormData();
     data.append("file", image);
     data.append("upload_preset", "merny-social");
@@ -26,11 +26,11 @@ export default function ProfilePic({ changeProfile }) {
       .then((res) => res.json())
       .then((data) => setUrl(data.url))
       .catch((err) => console.log(err));
-    //saving post to databse
-  };
+    //saving post to database
+  }, [image]);
 
   //   add profile pic to database
-  const postPic = () => {
+  const postPic = useCallback(() => {
     fetch("/uploadProfilePic", {
       method: "put",
       headers: {
@@ -53,7 +53,7 @@ export default function ProfilePic({ changeProfile }) {
         }
       })
       .catch((err) => console.log(err));
-  };
+  }, [url, changeProfile]);
 
   useEffect(() => {
     if (image) postDetails();
