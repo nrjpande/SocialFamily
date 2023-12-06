@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../css/profile.css";
-import PostDetails from "../components/PostDetails";
-import ProfilePic from "../components/ProfilePic";
+import PostDetails from "../components/PostDetails.js";
+import ProfilePic from "../components/ProfilePic.js";
 import { toast } from "react-toastify";
 import fetch from 'node-fetch';
 

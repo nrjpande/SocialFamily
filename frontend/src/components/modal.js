@@ -1,8 +1,6 @@
 import React from "react";
-import { RiCloseLine } from "react-icons/ri";
 import "../css/modal.css";
 import { useNavigate } from "react-router-dom";
-
 
 //to open dialog boxes to logout or upload profile pics
 export default function Modal({ setmodalOpen }) {
@@ -16,7 +14,7 @@ export default function Modal({ setmodalOpen }) {
             <h5 className="heading">Confirm</h5>
           </div>
           <button className="closeBtn" onClick={() => setmodalOpen(false)}>
-            <RiCloseLine></RiCloseLine>
+            <span className="material-symbols-outlined">close</span>
           </button>
           {/* modal content */}
           <div className="modalContent">Do you really want to Logout?</div>

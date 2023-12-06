@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../css/navbar.css";
-import { LoginContext } from "../context/loginContext";
+import { LoginContext } from "../context/loginContext.js";
 import fetch from 'node-fetch';
 
 export default function Navbar({ login }) {

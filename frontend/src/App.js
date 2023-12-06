@@ -1,19 +1,19 @@
 import "./App.css";
-import Navbar from "./components/NavBar";
-import Home from "./screens/Home";
-import SignUp from "./components/SignUp";
-import Signin from "./components/SignIn";
-import Profile from "./screens/Profile";
+import Navbar from "./components/NavBar.js";
+import Home from "./screens/Home.js";
+import SignUp from "./components/SignUp.js";
+import Signin from "./components/SignIn.js";
+import Profile from "./screens/Profile.js";
 import { Navigate, BrowserRouter, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Createpost from "./screens/Createpost";
+import Createpost from "./screens/Createpost.js";
 import React, { useState } from "react";
-import { LoginContext } from "./context/loginContext";
-import Modal from "./components/modal";
-import UserProfile from "./components/UserProfile";
-import MyFollowingPost from "./screens/MyFollowingPost";
-import Notifications from "./components/notifications";
+import { LoginContext } from "./context/loginContext.js";
+import Modal from "./components/modal.js";
+import UserProfile from "./components/UserProfile.js";
+import MyFollowingPost from "./screens/MyFollowingPost.js";
+import Notifications from "./components/notifications.js";
 
 function App() {
   const [userLogin, setUserLogin] = useState(false);
