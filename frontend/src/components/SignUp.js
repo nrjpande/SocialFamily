@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../css/signup.css";
 import { toast } from "react-toastify";
+const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:8080";
 
 export default function SignUp() {
   const navigate = useNavigate();
@@ -49,8 +50,9 @@ export default function SignUp() {
     if (password !== confirmPassword) {
       return notify("Password and confirm password do not match!");
     }
+
     // sending data to server
-    fetch("/SignUp", {
+    fetch(`${apiUrl}/signup`, {
       method: "post",
       headers: {
         "Content-Type": "application/json",

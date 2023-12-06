@@ -7,7 +7,7 @@ const jwt = require("jsonwebtoken");
 const { Jwt_secret } = require("../keys");
 
 //If a new user signup
-router.post("/https://socialfamilynew.netlify.app/SignUp", (req, res) => {
+router.post("/signup", (req, res) => {
   const { name, userName, email, password, gender } = req.body;
 
   if (!name || !userName || !email || !password || !gender) {
@@ -42,8 +42,9 @@ router.post("/https://socialfamilynew.netlify.app/SignUp", (req, res) => {
     }
   );
 });
+
 //existing user signIn
-router.post("/https://socialfamilynew.netlify.app/SignIn", (req, res) => {
+router.post("/signin", (req, res) => {
   const { email, password } = req.body;
 
   if (!email || !password) {

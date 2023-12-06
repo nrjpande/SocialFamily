@@ -1,13 +1,12 @@
 .signUp{
-flex:1;
+flex: 1;
 display: flex;
 justify-content: center;
 align-items: center;
-top: 15%;
 }
 
 .form-container{
-    width: 35%;
+    width: 35%; 
 }
 
 .SignUpTitle{
@@ -64,9 +63,6 @@ top: 15%;
     margin-right: 30px;
 }
   
-  label {
-    margin-right: px; 
-  }
 
 #submit-btn{
     background-color: #1773EA;
@@ -81,9 +77,15 @@ top: 15%;
 }
 
 @media screen and (max-width : 760px) {
+
+    .signUp{   
+    align-items:start;
+    margin-top: 5%;
+    }
+
     .form-container{
         width: 80%;
-        height: 40%;
+        height: 50%;
     }
 
     .radio-container input{

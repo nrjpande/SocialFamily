@@ -65,20 +65,23 @@ export default function Navbar({ login }) {
   };
 
   // if notification arrives it should be visible to the user on real time
+
   useEffect(() => {
-    fetch("/allnotifications", {
-      headers: {
-        Authorization: "Bearer " + localStorage.getItem("jwt"),
-      },
-    })
-      .then((res) => res.json())
-      .then((result) => {
-        if (result.length > 0) {
-          setShowNotificationCount(true);
-        }
-        setNotifications(result);
+    if (localStorage.getItem("jwt")) {
+      fetch("/allnotifications", {
+        headers: {
+          Authorization: "Bearer " + localStorage.getItem("jwt"),
+        },
       })
-      .catch((err) => console.log(err));
+        .then((res) => res.json())
+        .then((result) => {
+          if (result.length > 0) {
+            setShowNotificationCount(true);
+          }
+          setNotifications(result);
+        })
+        .catch((err) => console.log(err));
+    }
   }, [notifications]);
 
   // navigation large screen devices
