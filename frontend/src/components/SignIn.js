@@ -4,8 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import { LoginContext } from "../context/loginContext";
-const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:8080";
-
+import fetch from "node-fetch";
 
 export default function Signin() {
   const { setUserLogin } = useContext(LoginContext);
@@ -27,7 +26,7 @@ export default function Signin() {
     }
 
     // sending data to server
-    fetch(`${apiUrl}/signin`, {
+    fetch("/signin", {
       method: "post",
       headers: {
         "Content-Type": "application/json",

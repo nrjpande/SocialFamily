@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import "../css/createpost.css";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import fetch from 'node-fetch';
 
 export default function Createpost() {
   const [body, setBody] = useState("");

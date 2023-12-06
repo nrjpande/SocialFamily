@@ -3,6 +3,7 @@ import "../css/profile.css";
 import PostDetails from "../components/PostDetails";
 import ProfilePic from "../components/ProfilePic";
 import { toast } from "react-toastify";
+import fetch from 'node-fetch';
 
 export default function Profile() {
   const [pic, setPic] = useState([]);

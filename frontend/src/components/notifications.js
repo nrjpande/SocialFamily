@@ -1,5 +1,6 @@
 import { React, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import fetch from 'node-fetch';
 
 export default function Notifications() {
   //function to delete all the notifications in one go

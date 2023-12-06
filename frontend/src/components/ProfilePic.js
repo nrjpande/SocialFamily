@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { toast } from "react-toastify";
+import fetch from 'node-fetch';
 
 export default function ProfilePic({ changeProfile }) {
   const hiddenFileInput = useRef(null);

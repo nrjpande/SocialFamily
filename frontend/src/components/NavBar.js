@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../css/navbar.css";
 import { LoginContext } from "../context/loginContext";
+import fetch from 'node-fetch';
 
 export default function Navbar({ login }) {
   const { setmodalOpen } = useContext(LoginContext);

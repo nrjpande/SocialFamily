@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../css/profile.css";
 // import PostDetails from "./PostDetails";
 import { useParams } from "react-router-dom";
+import fetch from 'node-fetch';
 
 export default function UserProfile() {
   const { userid } = useParams();

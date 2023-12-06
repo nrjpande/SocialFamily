@@ -2,6 +2,7 @@ import "../css/postDetail.css";
 import "../css/home.css";
 import React from "react";
 
+
 //when a user goes into profile and click on any picture he can see comments and likes
 export default function PostDetails({ item, toggleDetails }) {
   const defaultProfilePicture =
