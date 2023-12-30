@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node app.cjs",
+    "build":"npm i"
   },
   "author": "",
   "license": "ISC",
